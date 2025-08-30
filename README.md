@@ -1,21 +1,39 @@
-﻿# Black Hole Simulation (Python + Blender)
-A physically grounded GR simulation with cinematic rendering via Blender.
-- Python: geodesics + ray tracing (Schwarzschild, later Kerr)
-- Blender: import trajectories, render accretion disk & lensing
+# Black Hole Simulator 🌌
 
-## Quick Start
-1) Create venv and install:
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   pip install -r requirements.txt
+A Python + Blender-powered **General Relativity black hole simulator**, inspired by *Interstellar* and NASA visualizations.
 
-2) Run a basic photon orbit demo:
-   python .\examples\photon_orbits.py
+---
 
-3) Export rays for Blender:
-   python .\examples\starfield_lensing.py  # writes CSVs to data/trajectories
+## ✨ Features
+- Photon orbits in Schwarzschild spacetime (deflected, critical, captured).
+- Ray tracing of a real starfield → Einstein rings and lensing effects.
+- Export geodesics to Blender for cinematic rendering.
+- Planned:
+  - Kerr black hole (rotation, like *Interstellar*)
+  - Accretion disk with Doppler boosting + gravitational redshift
+  - Observer time dilation and spaghettification
 
-4) Render in Blender (example):
-   blender -b .\blender\blackhole_scene.blend -P .\blender\render_blackhole.py
+---
 
-Note: `bpy` is provided by Blender's own Python. You do NOT pip-install it here.
+## 📂 Project Structure
+   src/ # physics, integrator, visualization, ray tracer, Blender export
+   examples/ # demo scripts: photon orbits, starfield lensing, ray tracer
+   data/ # starfield images + trajectories
+   outputs/ # rendered images
+   blender/ # Blender scene + rendering scripts
+   notebooks/ # derivations & experiments
+
+---
+
+## 🚀 Quick Start
+
+Clone the repository:
+```bash
+git clone https://github.com/Y-ash-Y/Blackhole-simulator.git
+cd Blackhole-simulator
+
+python -m venv .venv
+.\.venv\Scripts\activate   # Windows
+# or source .venv/bin/activate for Linux/macOS
+
+pip install -r requirements.txt
