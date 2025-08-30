@@ -16,12 +16,12 @@ A Python + Blender-powered **General Relativity black hole simulator**, inspired
 ---
 
 ## 📂 Project Structure
-   src/ # physics, integrator, visualization, ray tracer, Blender export
-   examples/ # demo scripts: photon orbits, starfield lensing, ray tracer
-   data/ # starfield images + trajectories
-   outputs/ # rendered images
-   blender/ # Blender scene + rendering scripts
-   notebooks/ # derivations & experiments
+   -src/ # physics, integrator, visualization, ray tracer, Blender export
+   -examples/ # demo scripts: photon orbits, starfield lensing, ray tracer
+   -data/ # starfield images + trajectories
+   -outputs/ # rendered images
+   -blender/ # Blender scene + rendering scripts
+   -notebooks/ # derivations & experiments
 
 ---
 
